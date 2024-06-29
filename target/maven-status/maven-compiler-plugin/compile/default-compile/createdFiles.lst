@@ -1,7 +1,0 @@
-com/avinaash/testing/dto/CustomerUpdateRequest.class
-com/avinaash/testing/repository/CustomerRepository.class
-com/avinaash/testing/dto/CustomerRegistrationRequest.class
-com/avinaash/testing/services/CustomerRegistrationService.class
-com/avinaash/testing/customer/Customer.class
-com/avinaash/testing/TestingApplication.class
-com/avinaash/testing/controller/CustomerRegistrationController.class
