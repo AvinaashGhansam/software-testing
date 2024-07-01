@@ -75,8 +75,6 @@ class CustomerRegistrationServiceTest {
 
     }
 
-    // TODO: Test is failing
-    /*
     @Test
     void itShouldThrowAnExceptionWhenPhoneNumberIsTaken() {
         // Given
@@ -95,6 +93,6 @@ class CustomerRegistrationServiceTest {
 
         // Finally
         then(customerRepository).should(never()).save(any(Customer.class));
-    }*/
+    }
 
 }
