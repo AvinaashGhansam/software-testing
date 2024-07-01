@@ -22,7 +22,7 @@ public class CustomerRegistrationService {
         Optional<Customer> customerOptional = customerRepository.selectCustomerByPhoneNumber(request.getCustomer().getPhoneNumber());
         if (customerOptional.isPresent()) {
             Customer customer = customerOptional.get();
-            if (customer.getPhoneNumber().equals(request.getCustomer().getPhoneNumber())) {
+            if (customer.getName().equals(request.getCustomer().getName())) {
                 return;
             }
             throw new IllegalStateException(String.format("Phone Number [%s] is taken", customer.getPhoneNumber()));
