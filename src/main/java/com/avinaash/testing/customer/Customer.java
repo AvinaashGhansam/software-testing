@@ -1,20 +1,27 @@
 package com.avinaash.testing.customer;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.lang.Nullable;
+
 import java.util.UUID;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 
 @Entity
+@JsonIgnoreProperties(value = {"id"}, allowGetters = true)
 public class Customer {
     @Id
     private UUID id;
 
     @NotBlank
+    @Column(nullable = false)
     private String name;
 
     @NotBlank
+    @Column(nullable = false, unique = true)
     private String phoneNumber;
 
     public Customer() {

@@ -8,6 +8,7 @@ import com.avinaash.testing.dto.CustomerRegistrationRequest;
 import com.avinaash.testing.repository.CustomerRepository;
 
 import java.util.Optional;
+import java.util.UUID;
 
 @Service
 public class CustomerRegistrationService {
@@ -26,6 +27,10 @@ public class CustomerRegistrationService {
                 return;
             }
             throw new IllegalStateException(String.format("Phone Number [%s] is taken", customer.getPhoneNumber()));
+        }
+
+        if (request.getCustomer().getId() == null) {
+            request.getCustomer().setId(UUID.randomUUID());
         }
         customerRepository.save(request.getCustomer());
     }
