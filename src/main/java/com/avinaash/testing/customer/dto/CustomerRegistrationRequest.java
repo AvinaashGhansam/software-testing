@@ -1,4 +1,4 @@
-package com.avinaash.testing.dto;
+package com.avinaash.testing.customer.dto;
 
 import com.avinaash.testing.customer.Customer;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,11 +1,11 @@
-package com.avinaash.testing.services;
+package com.avinaash.testing.customer.services;
 
 import com.avinaash.testing.customer.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.avinaash.testing.dto.CustomerRegistrationRequest;
-import com.avinaash.testing.repository.CustomerRepository;
+import com.avinaash.testing.customer.dto.CustomerRegistrationRequest;
+import com.avinaash.testing.customer.repository.CustomerRepository;
 
 import java.util.Optional;
 import java.util.UUID;

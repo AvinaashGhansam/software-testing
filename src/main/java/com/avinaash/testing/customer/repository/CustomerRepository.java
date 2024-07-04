@@ -1,4 +1,4 @@
-package com.avinaash.testing.repository;
+package com.avinaash.testing.customer.repository;
 
 import java.util.Optional;
 import java.util.UUID;

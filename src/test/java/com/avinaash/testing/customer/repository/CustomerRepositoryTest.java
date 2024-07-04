@@ -1,6 +1,7 @@
-package com.avinaash.testing.repository;
+package com.avinaash.testing.customer.repository;
 
 import com.avinaash.testing.customer.Customer;
+import com.avinaash.testing.customer.repository.CustomerRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -11,7 +12,6 @@ import java.util.UUID;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
-import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest(properties = "spring.jpa.properties.javax.persistence.validation.mode=none")
 class CustomerRepositoryTest {

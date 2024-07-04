@@ -1,8 +1,9 @@
-package com.avinaash.testing.services;
+package com.avinaash.testing.customer.repository.services;
 
 import com.avinaash.testing.customer.Customer;
-import com.avinaash.testing.dto.CustomerRegistrationRequest;
-import com.avinaash.testing.repository.CustomerRepository;
+import com.avinaash.testing.customer.dto.CustomerRegistrationRequest;
+import com.avinaash.testing.customer.repository.CustomerRepository;
+import com.avinaash.testing.customer.services.CustomerRegistrationService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;

@@ -1,4 +1,4 @@
-package com.avinaash.testing.controller;
+package com.avinaash.testing.customer.controller;
 
 import javax.validation.Valid;
 
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.avinaash.testing.dto.CustomerRegistrationRequest;
+import com.avinaash.testing.customer.dto.CustomerRegistrationRequest;
 
 @RestController
 @RequestMapping("api/v1/customer-registration")
